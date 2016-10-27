@@ -1,0 +1,185 @@
+.fui-iupload-btn {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	border: 0 none;
+	outline: 0 none;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	padding: 0 15px;
+	height: 24px;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #D3D7D7;
+	border-radius: 1px;
+	-webkit-transition: all 0.25s ease 0s;
+	-moz-transition: all 0.25s ease 0s;
+	-o-transition: all 250ms ease 0s;
+	transition: all 0.25s ease 0s;
+}
+.fui-iupload-btn, .fui-iupload-btn label, .fui-iupload-btn input[type=file] {
+	display: block;
+	height: 28px;
+	width: 140px;
+	padding: 0;
+	cursor: pointer;
+}
+.fui-iupload-btn, .fui-iupload-btn:hover {
+	text-decoration: none;
+}
+.fui-iupload-btn label {
+	font-size: 14px;
+	padding: 0;
+	line-height: 27px;
+	text-align: center;
+}
+.fui-iupload-btn input[type=file] {
+	height: 25px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	
+	zoom: 1;
+	filter:alpha(opacity=0);  
+    -moz-opacity:0;
+    -khtml-opacity: 0;  
+    opacity: 0;
+}
+.fui-iupload-list {
+    display: block;
+    position: relative;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+}
+.fui-iupload-list:before, .fui-iupload-list:after {
+    content:"";
+    display:table;
+}
+.fui-iupload-list:after {
+    clear:both;
+}
+.fui-iupload-list .fui-iupload-box {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+.fui-iupload-list .fui-iupload-box > a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #20beca;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #fff;
+    border: 5px dashed #DFDFDF;
+    -webkit-transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -o-transition: all 250ms ease 0s;
+    transition: all 0.25s ease 0s;
+}
+.fui-iupload-list .fui-iupload-box > a:hover {
+    text-decoration: none;
+}
+.fui-iupload-list .fui-iupload-box > a > label {
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.fui-iupload-list .fui-iupload-box > a > i {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    right: 5px;
+    background: url(../images/fui-iupload-remove-white-16.png) no-repeat scroll center center transparent;
+}
+
+.fui-iupload-list .fui-iupload-box .fui-iupload-move {
+	display: block;
+	position: relative;
+	margin: 1px 0 0 0;
+	padding: 0;
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move:before, .fui-iupload-list .fui-iupload-box .fui-iupload-move:after {
+    content:"";
+    display:table;
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move:after {
+    clear:both;
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-left, .fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-right {
+	text-decoration: none;
+	text-indent: -9999px;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	background-color: #CCC;
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-left {
+	float: left;
+	background-image: url(../images/fui-iupload-arrowhead-left-white-24.png);
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-right {
+	float: right;
+	background-image: url(../images/fui-iupload-arrowhead-right-white-24.png);
+}
+
+/** theme begin */
+
+.fui-iupload-btn {
+	background-color: #20beca;
+}
+.fui-iupload-btn:hover {
+	background-color: #20b1ca;
+}
+.fui-iupload-list .fui-iupload-box > a.fui-iupload-uploading {
+	height: 150px;
+	width: 150px;
+    background: url(../images/fui-iupload-loading-turquoise-128.gif) no-repeat scroll center center #fff;
+}
+.fui-iupload-list .fui-iupload-box > a > img {
+	height: 150px;
+}
+.fui-iupload-list .fui-iupload-box > a:hover {
+    text-decoration: none;
+    color: #20beca;
+    border-color: #20beca;
+}
+.fui-iupload-list .fui-iupload-box > a > label {
+	color: #20beca;
+}
+.fui-iupload-list .fui-iupload-box > a.fui-iupload-error > label {
+    color: #d01;
+}
+.fui-iupload-list .fui-iupload-box > a:hover > i {
+    background-image: url(../images/fui-iupload-remove-active.png);
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-left, .fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-right {
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	background-color: #7fc04c;
+}
+.fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-left:hover, .fui-iupload-list .fui-iupload-box .fui-iupload-move .fui-iupload-move-right:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #5a8e32;
+}
+/** theme end */
